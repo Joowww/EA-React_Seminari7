@@ -1,0 +1,169 @@
+.event-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.card {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 285px;
+  padding: 8px;
+  background-color: #282727;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  aspect-ratio: 16/12;
+  transition: all 0.3s ease;
+}
+
+.card .no-image {
+  border: 2px dashed #373737;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  aspect-ratio: 16/8;
+}
+
+.card .no-image .icon {
+  width: 60px;
+  color: #373737;
+}
+
+.card .image {
+  width: 100%;
+  aspect-ratio: 16/8;
+}
+
+.card .image .picture {
+  border-radius: 8px;
+  width: inherit;
+  aspect-ratio: 16/8;
+}
+
+.card .content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 12px;
+  padding-left: 4px;
+}
+
+.card .content .name {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.card .content .status {
+  padding-top: 8px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.card .content .address {
+  padding-top: 8px;
+  font-size: 0.8rem;
+  color: #a0a0a0;
+}
+
+.card .content .time {
+  padding-top: 12px;
+  font-size: 0.875rem;
+  color: #c5c5c5;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0px 0px 15px -8px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 0px 15px -8px rgba(66, 68, 90, 1);
+  box-shadow: 0px 0px 15px -8px rgba(66, 68, 90, 1);
+}
+
+.event-list-page {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.event-list-page h2 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.event-header {
+  position: relative;
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #00bfff;
+  text-transform: uppercase;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+.title-container {
+  background-color: #3333332e;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 12px 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  align-items: center;
+}
+
+.join-btn, .unjoin-btn {
+  margin-top: 12px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.join-btn {
+  background-color: #00bfff;
+  color: white;
+}
+
+.join-btn:hover {
+  background-color: #0099cc;
+  transform: translateY(-2px);
+}
+
+.unjoin-btn {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+.unjoin-btn:hover {
+  background-color: #ff5252;
+  transform: translateY(-2px);
+}
+
+.participants {
+  font-size: 0.8rem;
+  color: #a0a0a0;
+  margin-top: 8px;
+}
+
+.error-message {
+  color: #ff6b6b;
+  text-align: center;
+  padding: 20px;
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  margin: 20px;
+}
